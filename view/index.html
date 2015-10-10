@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="tears-of-legends">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tears of Legends</title>
+        <link rel="stylesheet" href="styles/layout.css">
+    </head>
+    <body ng-controller="MainController">
+
+        <stopwatch></stopwatch>
+
+        <player index="1"></player>
+        <player index="2"></player>
+
+        <pool></pool>
+
+        <characters></characters>
+
+        <script type="text/ng-template" id="/partials/components/stopwatch.html">
+            <div class="stopwatch" ng-class="stopwatch.state">{{ stopwatch.time || '00:00:00' }}</div>
+        </script>
+
+        <script type="text/ng-template" id="/partials/components/pool.html">
+            <div class="pool">{{ pool.name }}</div>
+        </script>
+
+        <script type="text/ng-template" id="/partials/components/player.html">
+            <div class="player" ng-class="'player-' + index">
+                <div class="player-name">{{ player.name }}</div>
+                <div class="player-twitter">{{ player.twitter }}</div>
+                <div class="player-twitch">{{ player.twitch }}</div>
+            </div>
+        </script>
+
+        <script type="text/ng-template" id="/partials/components/characters.html">
+            <div class="characters">Personnages choisis : {{ character(0) }} / {{ character(1) }} / {{ character(2) }}</div>
+        </script>
+
+        <script src="components/angular/angular.min.js"></script>
+        <script src="scripts/layout.js"></script>
+    </body>
+</html>

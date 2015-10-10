@@ -1,0 +1,10 @@
+{
+  "name": "nodecg-tears-of-legends",
+  "authors": [
+    "Seldszar <contact@seldszar.fr> (http://seldszar.fr)"
+  ],
+  "dependencies": {
+    "angular": "~1.4.4"
+  },
+  "private": true
+}

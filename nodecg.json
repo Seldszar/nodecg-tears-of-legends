@@ -1,0 +1,12 @@
+{
+  "name": "nodecg-tears-of-legends",
+  "version": "0.1.0",
+  "nodecgDependency": "~0.6.0",
+  "description": "Tears of Legends layout for NodeCG",
+  "authors": [
+    "Seldszar <contact@seldszar.fr> (http://seldszar.fr)"
+  ],
+  "extension": {
+    "path": "extension.js"
+  }
+}

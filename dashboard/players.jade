@@ -1,0 +1,20 @@
+form
+    .row
+        - for (var index = 0; index < 2; index++)
+            .col-sm-6
+                .form-group
+                    label Nom :
+                    input.form-control(name="players[#{index}][name]", type="text")
+                .form-group
+                    label Twitter :
+                    input.form-control(name="players[#{index}][twitter]", type="text")
+                .form-group
+                    label Twitch :
+                    input.form-control(name="players[#{index}][twitch]", type="text")
+
+    footer
+        ul.list-inline
+            li
+                button.btn.btn-primary(type="submit") Mettre à jour
+            li
+                a.btn.btn-default#switch-players Intervertir les joueurs

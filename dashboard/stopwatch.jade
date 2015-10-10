@@ -1,0 +1,13 @@
+form
+    .form-group
+        .input-group
+            input.form-control(type="text", name="time")
+            .input-group-btn
+                button.btn.btn-primary(data-stopwatch="start", data-toggle="tooltip", title="Démarrer")
+                    i.fa.fa-play
+                button.btn.btn-primary(data-stopwatch="pause", data-toggle="tooltip", title="Mettre en pause")
+                    i.fa.fa-pause
+                button.btn.btn-primary(data-stopwatch="finish", data-toggle="tooltip", title="Terminer")
+                    i.fa.fa-flag
+                button.btn.btn-primary(data-stopwatch="reset", data-toggle="tooltip", title="Réinitialiser")
+                    i.fa.fa-fast-backward

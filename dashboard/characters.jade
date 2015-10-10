@@ -1,0 +1,10 @@
+form
+    - for (var index = 0; index < 3; index++)
+        .form-group
+            label Personnage #{index + 1} :
+            select.form-control(name="characters[#{index}]")
+                each name, index in bundleConfig.characters
+                    option(value=index)= name
+
+    footer
+        button.btn.btn-primary(type="submit") Mettre à jour

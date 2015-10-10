@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'Digital-7 Mono';
+    src: url('../fonts/digital-7.mono-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marcellus SC';
+    src: url('../fonts/marcellussc-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('../fonts/robotocondensed-bold_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Upheaval TT (BRK)';
+    src: url('../fonts/upheavtt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background: #f0f url('../images/overlay.png') no-repeat;
+    color: #fff;
+    font-family: 'Upheaval TT (BRK)', sans-serif;
+    font-size: 20px;
+    height: 720px;
+    letter-spacing: 1.5px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 1280px;
+}
+
+pool.updating .pool {
+    opacity: 0;
+}
+
+player.updating .player-name,
+player.updating .player-twitter,
+player.updating .player-twitch {
+    opacity: 0;
+}
+
+player.updating .player-name {
+    transform: scale(1.3);
+}
+
+player.updating .player-twitter {
+    transform: translateX(25px);
+}
+
+player.updating .player-twitch {
+    transform: translateX(-25px);
+}
+
+characters.updating .characters {
+    opacity: 0;
+    transform: translateY(25px) scale(.9);
+}
+
+.stopwatch {
+    color: #888;
+    font-family: 'Digital-7 Mono';
+    font-size: 28px;
+    left: 50%;
+    letter-spacing: 0;
+    top: 135px;
+    transform: translateX(-50%);
+}
+
+.stopwatch.running {
+    color: #fff;
+}
+
+.stopwatch.finished {
+    color: #D4AF37;
+}
+
+.stopwatch,
+.player-name,
+.player-twitter,
+.player-twitch,
+.pool,
+.characters {
+    position: absolute;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+.player-name {
+    background: -webkit-linear-gradient(#b1ab73, #9c8959);
+    -webkit-background-clip: text;
+    font-family: 'Marcellus SC';
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    top: 571px;
+    width: 413px;
+}
+
+.player-twitter,
+.player-twitch {
+    font-size: 18px;
+    line-height: 30px;
+    top: 608px;
+}
+
+.player-twitch {
+    text-align: right;
+}
+
+/**
+ * Player 1
+ */
+.player-1 .player-name {
+    right: 726px;
+}
+
+.player-1 .player-twitter {
+    left: 147px;
+}
+
+.player-1 .player-twitch {
+    right: 742px;
+}
+
+/**
+ * Player 2
+ */
+.player-2 .player-name {
+    left: 726px;
+}
+
+.player-2 .player-twitter {
+    left: 742px;
+}
+
+.player-2 .player-twitch {
+    right: 147px;
+}
+
+/**
+ * Pool
+ */
+.pool {
+    align-items: center;
+    color: #3d3226;
+    display: flex;
+    font-family: 'Roboto Condensed';
+    font-size: 17px;
+    font-weight: bold;
+    height: 50px;
+    justify-content: center;
+    left: 50%;
+    letter-spacing: -1px;
+    line-height: 1.1em;
+    margin-left: -45px;
+    text-align: center;
+    top: 620px;
+    width: 92px;
+}
+
+/**
+ * Characters
+ */
+.characters {
+    bottom: 12px;
+    font-size: 20px;
+    text-align: center;
+    transition: all .5s;
+    width: 100%;
+}

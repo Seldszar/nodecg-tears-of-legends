@@ -1,0 +1,29 @@
+[
+  {
+    "name": "players",
+    "title": "Joueurs",
+    "width": 4,
+    "file": "players.jade",
+    "icon": "fa-users"
+  },
+  {
+    "name": "pool",
+    "title": "Pool",
+    "width": 4,
+    "file": "pool.jade",
+    "icon": "fa-info"
+  },
+  {
+    "name": "stopwatch",
+    "title": "Chronomètre",
+    "width": 4,
+    "file": "stopwatch.jade",
+    "icon": "fa-clock-o"
+  },
+  {
+    "name": "characters",
+    "title": "Personnages",
+    "width": 4,
+    "file": "characters.jade"
+  }
+]

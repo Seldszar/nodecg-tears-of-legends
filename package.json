@@ -1,0 +1,14 @@
+{
+  "name": "nodecg-tears-of-legends",
+  "version": "0.1.0",
+  "main": "extension.js",
+  "authors": [
+    "Seldszar <contact@seldszar.fr> (http://seldszar.fr)"
+  ],
+  "dependencies": {
+    "moment": "^2.10.6",
+    "moment-duration-format": "^1.3.0",
+    "rieussec": "^0.2.4"
+  },
+  "private": true
+}
