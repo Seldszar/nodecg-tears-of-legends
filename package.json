@@ -7,8 +7,8 @@
   ],
   "dependencies": {
     "moment": "^2.10.6",
-    "moment-duration-format": "^1.3.0",
-    "rieussec": "^0.2.4"
+    "moment-duration-format": "^2.2.2",
+    "rieussec": "^0.3.0"
   },
   "private": true
 }
